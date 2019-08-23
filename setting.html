@@ -1,0 +1,62 @@
+<html>
+
+<head>
+     <meta http-equiv="content-type" charset="utf-8">
+</head>
+<body>
+<form action="amazon.php" method="post">
+<input type="text" name="main_money" id="main_money" placeholder="999,999,999,999" >
+<br/>お届け先<input type="text" name="address" id="address"  placeholder="田所さん - 810-1919 にお届け ⌵" >
+<br/>カートの中身<input type="text" name="cart" id="cart" placeholder="3" >
+<br/>日付1<input type="text" name="day_1" id="day_1" placeholder="2019/07/24" >
+<br/>残金1<input type="text" name="money_1" id="money_1" placeholder="-￥500,000,000" >
+<br/>日付2<input type="text" name="day_2" id="day_2" placeholder="2019/07/24" >
+<br/>残金2<input type="text" name="money_2" id="money_2" placeholder="￥500,000,000" >
+<br/>日付3<input type="text" name="day_3" id="day_3" placeholder="2019/07/24" >
+<br/>残金3<input type="text" name="money_3" id="money_3" placeholder="-￥500,000,000" >
+<br/>日付4<input type="text" name="day_4" id="day_4" placeholder="2019/07/24" >
+<br/>残金4<input type="text" name="money_4" id="money_4" placeholder="￥500,000,000" >
+<br/>日付5<input type="text" name="day_5" id="day_5" placeholder="2019/07/24" >
+<br/>残金5<input type="text" name="money_5" id="money_5" placeholder="-￥500,000,000" >
+<br/><input type="submit" value="送信">
+</form>
+<button id="button">自動入力</button>
+<script>
+//もっと単純なidにしとけばよかった...
+var button = document.getElementById("button");
+button.addEventListener("click", function(e) {
+e.preventDefault();
+var resultForm = document.getElementById("main_money");
+resultForm.value = "999,999,999,999";
+var resultForm = document.getElementById("address");
+resultForm.value = "田所さん - 810-1919 にお届け ⌵";
+var resultForm = document.getElementById("cart");
+resultForm.value = "3";
+var resultForm = document.getElementById("day_1");
+resultForm.value = "2019/07/24";
+var resultForm = document.getElementById("money_1");
+resultForm.value = "-￥500,000,000";
+var resultForm = document.getElementById("day_2");
+resultForm.value = "2019/07/24";
+var resultForm = document.getElementById("money_2");
+resultForm.value = "￥500,000,000";
+var resultForm = document.getElementById("day_3");
+resultForm.value = "2019/07/24";
+var resultForm = document.getElementById("money_3");
+resultForm.value = "-￥500,000,000";
+var resultForm = document.getElementById("day_4");
+resultForm.value = "2019/07/24";
+var resultForm = document.getElementById("money_4");
+resultForm.value = "￥500,000,000";
+var resultForm = document.getElementById("day_5");
+resultForm.value = "2019/07/24";
+var resultForm = document.getElementById("money_5");
+resultForm.value = "-￥500,000,000";
+
+
+});
+</script>
+
+
+</body>
+</html>
