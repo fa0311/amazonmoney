@@ -1,7 +1,3 @@
 # amazonmoney
 Amazonで金持ちになれます
-
-
-
-
-aaaaaaaaaaaaaaaaaaa
+同じフォルダにぶっこめば使えます
